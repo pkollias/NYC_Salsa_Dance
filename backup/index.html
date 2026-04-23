@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NYC Salsa Dance — Beginner &amp; Intermediate Classes in Brooklyn</title>
+  <meta name="description" content="Beginner and intermediate salsa dance classes in Bushwick, Brooklyn. Tuesdays, Thursdays, and Saturdays at 232 Varet Street. All levels welcome. $20 drop-in." />
+  <meta name="keywords" content="salsa dance brooklyn, salsa class bushwick, salsa nyc, beginner salsa brooklyn, on2 salsa new york, salsa dance classes near me, salsa dancing bushwick, latin dance brooklyn" />
+  <meta property="og:title" content="NYC Salsa Dance — Brooklyn" />
+  <meta property="og:description" content="Beginner and intermediate salsa classes in Bushwick, Brooklyn. Join a welcoming community at 232 Varet Street." />
+  <meta property="og:type" content="website" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "DanceSchool",
+    "name": "NYC Salsa Dance",
+    "description": "Beginner and intermediate salsa dance classes in Bushwick, Brooklyn. Welcoming community, all levels.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "232 Varet Street, 2nd Floor",
+      "addressLocality": "Brooklyn",
+      "addressRegion": "NY",
+      "postalCode": "11206",
+      "addressCountry": "US"
+    },
+    "sameAs": ["https://instagram.com/nyc.salsa.dance"],
+    "openingHoursSpecification": [
+      {"@type": "OpeningHoursSpecification", "dayOfWeek": "Tuesday",  "opens": "19:00", "closes": "21:00"},
+      {"@type": "OpeningHoursSpecification", "dayOfWeek": "Thursday", "opens": "19:00", "closes": "21:00"},
+      {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "12:00", "closes": "15:00"}
+    ],
+    "priceRange": "$20–$30"
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;700;900&family=Hedvig+Letters+Serif&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    window.SITE = {
+      name:            "NYC Salsa Dance",
+      address:         "232 Varet Street, 2nd Floor",
+      addressFull:     "232 Varet Street, 2nd Floor\n(Inside Metamorphosis Fitness)\nBrooklyn, NY 11206",
+      mapsUrl:         "https://maps.app.goo.gl/LQngZoF4Mh9aEFiA9",
+      booking:         "https://foractive.app.link/pro/nycsalsadance",
+      instagram:       "https://instagram.com/nyc.salsa.dance",
+      instagramHandle: "@nyc.salsa.dance",
+      whatsapp:        "https://chat.whatsapp.com/HieZ4l5e4UA5ZGcgmJCttJ?mode=gi_t",
+    };
+
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            charcoal: "#3D3530",
+            red:      "#C5342A",
+            orange:   "#E07035",
+            cream:    "#F4EFE6",
+            offwhite: "#F9F7F4",
+          },
+          fontFamily: {
+            sans:  ["Hanken Grotesk", "sans-serif"],
+            serif: ["Hedvig Letters Serif", "serif"],
+          },
+        },
+      },
+    };
+  </script>
+
+  <style>
+    body { background-color: #F4EFE6; color: #3D3530; }
+    html { scroll-behavior: smooth; }
+
+    .photo-slot {
+      background-color: #D9D0C2;
+      position: relative;
+      overflow: hidden;
+    }
+    .photo-slot::after {
+      content: "PHOTO";
+      position: absolute;
+      inset: 0;
+      display: block;
+      line-height: 1;
+      padding-top: 50%;
+      text-align: center;
+      font-family: "Hanken Grotesk", sans-serif;
+      font-size: 0.65rem;
+      letter-spacing: 0.25em;
+      color: #A89E90;
+    }
+
+    .video-slot {
+      background-color: #1A1614;
+      position: absolute;
+      inset: 0;
+    }
+    .video-slot::after {
+      content: "VIDEO";
+      position: absolute;
+      inset: 0;
+      display: block;
+      padding-top: 50%;
+      text-align: center;
+      font-family: "Hanken Grotesk", sans-serif;
+      font-size: 0.65rem;
+      letter-spacing: 0.35em;
+      color: rgba(244, 239, 230, 0.12);
+      line-height: 1;
+    }
+  </style>
+</head>
+
+<body class="font-sans antialiased">
+
+  <!-- NAV -->
+  <header class="sticky top-0 z-50 bg-cream/95 backdrop-blur border-b border-charcoal/10">
+    <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="index.html" class="group flex flex-col leading-none">
+        <span class="text-[9px] font-sans font-bold tracking-[0.25em] text-charcoal/50 uppercase">★ NYC ★</span>
+        <span class="font-serif text-lg text-charcoal group-hover:text-red transition-colors">Salsa Dance</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-8">
+        <a href="classes.html" class="text-sm font-medium text-charcoal hover:text-red transition-colors tracking-wide">Classes</a>
+        <a href="about.html"   class="text-sm font-medium text-charcoal hover:text-red transition-colors tracking-wide">About</a>
+        <a href="https://foractive.app.link/pro/nycsalsadance" target="_blank" rel="noopener"
+           class="text-sm font-semibold bg-red text-cream px-5 py-2.5 rounded-full hover:bg-charcoal transition-colors">Book Now →</a>
+      </nav>
+      <button id="nav-toggle" class="md:hidden p-1 text-charcoal" aria-label="Menu">
+        <svg id="icon-open"  width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        <svg id="icon-close" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" class="hidden"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+    <div id="mobile-nav" class="hidden md:hidden bg-cream border-t border-charcoal/10 px-6 py-5 flex flex-col gap-5">
+      <a href="classes.html" class="text-sm font-medium text-charcoal">Classes</a>
+      <a href="about.html"   class="text-sm font-medium text-charcoal">About</a>
+      <a href="https://foractive.app.link/pro/nycsalsadance" target="_blank" rel="noopener"
+         class="text-sm font-semibold bg-red text-cream px-5 py-3 rounded-full text-center">Book Now →</a>
+    </div>
+  </header>
+
+
+  <!-- HERO -->
+  <section class="max-w-7xl mx-auto px-6 pt-16 pb-12 min-h-[88vh] flex items-center">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 xl:gap-20 w-full items-center">
+
+      <div>
+        <h1 class="font-serif leading-[0.88] tracking-tight text-charcoal mb-8"
+            style="font-size: clamp(4.5rem, 11vw, 9rem);">
+          <span class="block">NYC</span>
+          <span class="block text-red">Salsa</span>
+          <span class="block">Dance.</span>
+        </h1>
+
+        <p class="text-charcoal/65 text-lg leading-relaxed max-w-sm mb-3">
+          A welcoming salsa community in the heart of Brooklyn. All levels welcome.
+        </p>
+        <a href="https://maps.app.goo.gl/LQngZoF4Mh9aEFiA9" target="_blank" rel="noopener"
+           class="inline-block text-charcoal/45 text-sm leading-snug hover:text-red transition-colors mb-10">
+          232 Varet Street, 2nd Floor<br/>
+          <span class="text-charcoal/30">(Inside Metamorphosis Fitness) · Brooklyn, NY 11206</span>
+        </a>
+
+        <div class="flex flex-wrap gap-4">
+          <a href="https://foractive.app.link/pro/nycsalsadance" target="_blank" rel="noopener"
+             class="bg-red text-cream font-semibold px-8 py-4 rounded-full hover:bg-charcoal transition-colors">Book a Class</a>
+          <a href="classes.html"
+             class="border border-charcoal text-charcoal font-semibold px-8 py-4 rounded-full hover:bg-charcoal hover:text-cream transition-colors">See Schedule →</a>
+        </div>
+      </div>
+
+      <div class="relative">
+        <div class="photo-slot rounded-2xl w-full aspect-[4/5]"></div>
+        <div class="absolute bottom-6 left-6 bg-cream rounded-xl px-5 py-4 shadow-xl border border-charcoal/10">
+          <p class="text-[10px] font-bold tracking-widest uppercase text-charcoal/40 mb-1">From</p>
+          <p class="font-serif text-5xl text-charcoal leading-none">$20</p>
+          <p class="text-xs text-charcoal/50 mt-1">per class</p>
+        </div>
+        <div class="absolute top-6 right-6 w-20 h-20 bg-red rounded-full flex flex-col items-center justify-center text-cream text-center rotate-6 shadow-lg">
+          <span class="text-[7px] font-bold tracking-widest uppercase">★ NYC ★</span>
+          <span class="font-serif text-[11px] font-bold leading-tight mt-0.5">Salsa<br/>Dance</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- VIDEO PANEL
+       To add footage: replace <div class="video-slot"> with:
+       <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover opacity-90">
+         <source src="your-video.mp4" type="video/mp4">
+       </video>
+  -->
+  <section class="relative w-full overflow-hidden" style="height: 85vh; min-height: 520px;">
+    <div class="video-slot"></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-transparent to-transparent pointer-events-none"></div>
+    <div class="absolute bottom-0 left-0 right-0 px-6 pb-16">
+      <div class="max-w-7xl mx-auto">
+        <p class="text-[10px] font-bold tracking-[0.25em] uppercase text-cream/40 mb-4">On the Floor</p>
+        <h2 class="font-serif text-cream leading-[0.9]" style="font-size: clamp(2.5rem, 6vw, 5rem);">
+          Every class.<br/>Every week.
+        </h2>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- MANIFESTO
+       To add a photo background: replace the bg-[#1E1A18] div style with:
+       style="background-image:url('your-photo.jpg'); background-size:cover; background-position:center;"
+  -->
+  <section class="relative text-cream py-24 px-6 overflow-hidden">
+    <div class="absolute inset-0 bg-[#1E1A18]"></div>
+    <div class="absolute inset-0 bg-charcoal/50"></div>
+    <div class="relative z-10 max-w-7xl mx-auto">
+      <blockquote class="font-serif leading-[1.05] tracking-tight"
+                  style="font-size: clamp(2rem, 5.5vw, 4.5rem); max-width: 900px;">
+        "A vibrant salsa club hidden<br/>behind a quiet New York façade."
+      </blockquote>
+      <div class="mt-10 flex items-center gap-4">
+        <div class="h-px w-10 bg-orange"></div>
+        <span class="text-[10px] font-bold tracking-[0.25em] uppercase text-cream/40">Feel the beat. Own the room.</span>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- VALUE PROPS -->
+  <section class="bg-cream py-24 px-6">
+    <div class="max-w-7xl mx-auto">
+      <div class="max-w-xl mb-16">
+        <p class="text-[10px] font-bold tracking-[0.25em] uppercase text-charcoal/40 mb-3">Why Here</p>
+        <h2 class="font-serif text-charcoal leading-tight"
+            style="font-size: clamp(2rem, 4vw, 3.25rem);">
+          We give you the tools.<br/>You do the dancing.
+        </h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-px bg-charcoal/10 rounded-2xl overflow-hidden">
+        <div class="bg-cream p-10">
+          <div class="font-serif text-6xl text-red/20 mb-6 leading-none">01</div>
+          <h3 class="font-semibold text-charcoal text-lg mb-3">No Experience Needed</h3>
+          <p class="text-charcoal/60 text-sm leading-relaxed">The beginner class is built from zero. If you've never danced a step in your life, Tuesday or Thursday night is your starting line.</p>
+        </div>
+        <div class="bg-cream p-10">
+          <div class="font-serif text-6xl text-red/20 mb-6 leading-none">02</div>
+          <h3 class="font-semibold text-charcoal text-lg mb-3">Community Over Performance</h3>
+          <p class="text-charcoal/60 text-sm leading-relaxed">This is not a showcase. No auditions, no competitions. Just people who want to move, connect, and have a real night in Brooklyn.</p>
+        </div>
+        <div class="bg-cream p-10">
+          <div class="font-serif text-6xl text-red/20 mb-6 leading-none">03</div>
+          <h3 class="font-semibold text-charcoal text-lg mb-3">Rooted in NYC Salsa</h3>
+          <p class="text-charcoal/60 text-sm leading-relaxed">We teach on-2 — the New York style. Grounded in the tradition that made this city the salsa capital of the world.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- CLASSES PREVIEW — 2×2 grid -->
+  <section class="bg-offwhite py-24 px-6">
+    <div class="max-w-7xl mx-auto">
+
+      <div class="mb-12">
+        <p class="text-[10px] font-bold tracking-[0.25em] uppercase text-charcoal/40 mb-3">What We Offer</p>
+        <h2 class="font-serif text-charcoal" style="font-size: clamp(2rem, 4vw, 3.25rem);">Classes</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-6">
+
+        <!-- Beginner — top left -->
+        <div class="bg-cream rounded-2xl p-8 border border-charcoal/10 flex flex-col">
+          <span class="text-xs font-bold tracking-widest uppercase text-orange mb-3">Beginner</span>
+          <h3 class="font-serif text-2xl text-charcoal mb-3">Start Here</h3>
+          <p class="text-charcoal/60 text-sm leading-relaxed flex-1 mb-6">
+            No experience needed. Footwork, timing, and partner connection in a relaxed, welcoming space.
+          </p>
+          <div class="pt-5 border-t border-charcoal/10 flex items-end justify-between">
+            <div>
+              <p class="text-sm font-bold text-charcoal">Tue &amp; Thu · 7–9 PM</p>
+              <p class="text-xs text-charcoal/45 mt-0.5">2 hours per class</p>
+            </div>
+            <span class="font-serif text-4xl text-charcoal">$30</span>
+          </div>
+        </div>
+
+        <!-- Intermediate — top right -->
+        <div class="bg-charcoal rounded-2xl p-8 flex flex-col">
+          <span class="text-xs font-bold tracking-widest uppercase text-red mb-3">Intermediate</span>
+          <h3 class="font-serif text-2xl text-cream mb-3">Level Up</h3>
+          <p class="text-cream/60 text-sm leading-relaxed flex-1 mb-6">
+            Turns, styling, musicality, and complex partnering. Two hours to deepen your movement.
+          </p>
+          <div class="pt-5 border-t border-cream/15 flex items-end justify-between">
+            <div>
+              <p class="text-sm font-bold text-cream">Saturdays · 1–3 PM</p>
+              <p class="text-xs text-cream/45 mt-0.5">2 hours per class</p>
+            </div>
+            <span class="font-serif text-4xl text-cream">$30</span>
+          </div>
+        </div>
+
+        <!-- Ladies Styling — bottom left, ★ New ★ near price -->
+        <div class="bg-red rounded-2xl p-8 flex flex-col">
+          <span class="text-xs font-bold tracking-widest uppercase text-cream/70 mb-3">Ladies Styling</span>
+          <h3 class="font-serif text-2xl text-cream mb-3">Express Yourself</h3>
+          <p class="text-cream/80 text-sm leading-relaxed flex-1 mb-6">
+            Feminine styling, body movement, and expression.
+          </p>
+          <div class="pt-5 border-t border-cream/20 flex items-end justify-between">
+            <div>
+              <p class="text-sm font-bold text-cream">Saturdays · 12–1 PM</p>
+              <p class="text-xs text-cream/55 mt-0.5">1 hour per class</p>
+            </div>
+            <div class="flex items-center gap-2">
+              <div class="w-11 h-11 bg-cream rounded-full flex flex-col items-center justify-center text-red text-center -rotate-12 shadow-sm flex-shrink-0">
+                <span class="text-[6px] font-bold leading-none">★</span>
+                <span class="text-[8px] font-bold leading-none mt-0.5">New</span>
+                <span class="text-[6px] font-bold leading-none mt-0.5">★</span>
+              </div>
+              <span class="font-serif text-4xl text-cream">$25</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Package — bottom right -->
+        <div class="bg-orange rounded-2xl p-8 flex flex-col">
+          <span class="text-xs font-bold tracking-widest uppercase text-cream/70 mb-3">Package</span>
+          <h3 class="font-serif text-2xl text-cream mb-6">Save More</h3>
+          <div class="flex-1 space-y-4 mb-6">
+            <div class="flex items-center justify-between">
+              <span class="text-sm font-medium text-cream/85">4 Classes</span>
+              <span class="font-serif text-3xl text-cream">$110</span>
+            </div>
+            <div class="h-px bg-cream/25"></div>
+            <div class="flex items-center justify-between">
+              <span class="text-sm font-medium text-cream/85">8 Classes</span>
+              <span class="font-serif text-3xl text-cream">$200</span>
+            </div>
+          </div>
+          <div class="pt-5 border-t border-cream/20">
+            <p class="text-xs text-cream/60">2-hour classes. Best value for regulars.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Single CTA button -->
+      <div class="text-center">
+        <a href="classes.html" class="inline-block bg-charcoal text-cream font-semibold px-10 py-4 rounded-full hover:bg-red transition-colors">
+          View Full Schedule &amp; Pricing →
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- COMMUNITY -->
+  <section class="bg-cream py-24 px-6">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <div>
+        <p class="text-[10px] font-bold tracking-[0.25em] uppercase text-charcoal/40 mb-4">The Community</p>
+        <h2 class="font-serif text-charcoal leading-tight mb-6"
+            style="font-size: clamp(2rem, 4.5vw, 3.5rem);">
+          Judgement-free.<br/>Every week.
+        </h2>
+        <p class="text-charcoal/65 leading-relaxed mb-5">
+          NYC Salsa Dance is a social club — not a performance company. Beginners and experienced dancers share the same floor at
+          <a href="https://maps.app.goo.gl/LQngZoF4Mh9aEFiA9" target="_blank" rel="noopener" class="underline hover:text-red transition-colors">232 Varet Street, Brooklyn</a>.
+        </p>
+        <p class="text-charcoal/65 leading-relaxed">
+          Come alone. Leave knowing everyone in the room.
+        </p>
+      </div>
+      <div class="grid grid-cols-2 gap-3">
+        <div class="photo-slot rounded-xl aspect-square"></div>
+        <div class="photo-slot rounded-xl aspect-[4/5] mt-8"></div>
+        <div class="photo-slot rounded-xl aspect-[4/5] -mt-8"></div>
+        <div class="photo-slot rounded-xl aspect-square"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- REVIEWS
+       Replace placeholder content with real Google reviews.
+  -->
+  <section class="bg-offwhite py-24 px-6">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex items-end justify-between mb-12 flex-wrap gap-4">
+        <div>
+          <p class="text-[10px] font-bold tracking-[0.25em] uppercase text-charcoal/40 mb-3">Don't Take Our Word</p>
+          <h2 class="font-serif text-charcoal" style="font-size: clamp(2rem, 4vw, 3.25rem);">What People Say</h2>
+        </div>
+        <a href="https://maps.app.goo.gl/LQngZoF4Mh9aEFiA9" target="_blank" rel="noopener"
+           class="text-sm font-semibold border-b-2 border-charcoal pb-0.5 hover:text-red hover:border-red transition-colors">
+          Read All Reviews on Google →
+        </a>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+        <div class="bg-cream rounded-2xl p-7 border border-charcoal/10">
+          <div class="text-orange text-sm mb-5">★★★★★</div>
+          <p class="text-charcoal/75 text-sm leading-relaxed mb-6">"First class was terrifying, second class was addictive. Now I'm here every week. The community Jacob has built is genuinely special."</p>
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-charcoal/10 flex items-center justify-center text-xs font-bold text-charcoal">A</div>
+            <p class="text-sm font-semibold text-charcoal">A.M.</p>
+          </div>
+        </div>
+        <div class="bg-cream rounded-2xl p-7 border border-charcoal/10">
+          <div class="text-orange text-sm mb-5">★★★★★</div>
+          <p class="text-charcoal/75 text-sm leading-relaxed mb-6">"Moved to Brooklyn last year and this is honestly one of the best things I've found here. Great energy, great people, every single week."</p>
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-charcoal/10 flex items-center justify-center text-xs font-bold text-charcoal">R</div>
+            <p class="text-sm font-semibold text-charcoal">R.T.</p>
+          </div>
+        </div>
+        <div class="bg-cream rounded-2xl p-7 border border-charcoal/10">
+          <div class="text-orange text-sm mb-5">★★★★★</div>
+          <p class="text-charcoal/75 text-sm leading-relaxed mb-6">"Had never danced before in my life. Within a month I was helping other beginners. The instruction is clear, patient, and actually fun."</p>
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-charcoal/10 flex items-center justify-center text-xs font-bold text-charcoal">S</div>
+            <p class="text-sm font-semibold text-charcoal">S.K.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- JOIN CTA -->
+  <section id="join" class="bg-red py-24 px-6">
+    <div class="max-w-7xl mx-auto text-center">
+      <p class="text-[10px] font-bold tracking-[0.25em] uppercase text-cream/50 mb-5">Ready?</p>
+      <h2 class="font-serif text-cream leading-[0.88] mb-4"
+          style="font-size: clamp(4rem, 10vw, 8rem);">Join Now.</h2>
+      <p class="text-cream/75 text-lg max-w-sm mx-auto mb-12">
+        Book directly, follow on Instagram, or join the WhatsApp group for updates.
+      </p>
+      <div class="flex flex-wrap gap-4 justify-center">
+        <a href="https://foractive.app.link/pro/nycsalsadance" target="_blank" rel="noopener"
+           class="inline-flex items-center gap-2.5 bg-cream text-charcoal font-semibold px-8 py-4 rounded-full hover:bg-charcoal hover:text-cream transition-colors">
+          Book a Class →
+        </a>
+        <a href="https://instagram.com/nyc.salsa.dance" target="_blank" rel="noopener"
+           class="inline-flex items-center gap-2.5 bg-cream/10 border border-cream/30 text-cream font-semibold px-8 py-4 rounded-full hover:bg-cream hover:text-charcoal transition-colors">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          Instagram
+        </a>
+        <a href="https://chat.whatsapp.com/HieZ4l5e4UA5ZGcgmJCttJ?mode=gi_t" target="_blank" rel="noopener"
+           class="inline-flex items-center gap-2.5 border-2 border-cream/30 text-cream font-semibold px-8 py-4 rounded-full hover:bg-cream hover:text-charcoal transition-colors">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer class="bg-charcoal text-cream py-12 px-6">
+    <div class="max-w-7xl mx-auto">
+      <div class="font-serif text-2xl mb-3">NYC Salsa Dance</div>
+      <a href="https://maps.app.goo.gl/LQngZoF4Mh9aEFiA9" target="_blank" rel="noopener"
+         class="text-cream/40 text-sm leading-relaxed hover:text-cream/70 transition-colors">
+        232 Varet Street, 2nd Floor<br/>
+        (Inside Metamorphosis Fitness)<br/>
+        Brooklyn, NY 11206 →
+      </a>
+    </div>
+    <div class="max-w-7xl mx-auto mt-8 pt-6 border-t border-cream/10 text-cream/25 text-xs">
+      © 2025 NYC Salsa Dance · Website Design by Pavlos Kollias · Visual Direction by Elea Franco.
+    </div>
+  </footer>
+
+
+  <script>
+    const btn=document.getElementById("nav-toggle"),drawer=document.getElementById("mobile-nav"),io=document.getElementById("icon-open"),ic=document.getElementById("icon-close");
+    btn.addEventListener("click",()=>{const o=drawer.classList.toggle("hidden");io.classList.toggle("hidden",!o);ic.classList.toggle("hidden",o);});
+  </script>
+
+</body>
+</html>
