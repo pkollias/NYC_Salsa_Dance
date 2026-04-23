@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Classes &amp; Pricing — NYC Salsa Dance Brooklyn</title>
+  <meta name="description" content="Salsa dance classes in Bushwick, Brooklyn. Beginner classes Tuesday &amp; Thursday 7–9 PM. Intermediate Saturdays 1–3 PM. Ladies Styling Saturdays 12–1 PM. From $20." />
+  <meta name="keywords" content="salsa class brooklyn, beginner salsa bushwick, salsa lessons nyc, on2 salsa brooklyn, ladies styling salsa, salsa schedule brooklyn, latin dance classes new york" />
+  <meta property="og:title" content="Classes &amp; Pricing — NYC Salsa Dance Brooklyn" />
+  <meta property="og:description" content="Beginner, intermediate, and ladies styling salsa classes in Bushwick, Brooklyn. Tue, Thu &amp; Sat at 232 Varet Street." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;700;900&family=Hedvig+Letters+Serif&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { charcoal:"#3D3530", red:"#C5342A", orange:"#E07035", cream:"#F4EFE6", offwhite:"#F9F7F4" },
+          fontFamily: { sans:["Hanken Grotesk","sans-serif"], serif:["Hedvig Letters Serif","serif"] },
+        },
+      },
+    };
+  </script>
+  <style>
+    body { background-color: #F4EFE6; color: #3D3530; }
+    html { scroll-behavior: smooth; }
+    .photo-slot { background-color:#D9D0C2; position:relative; overflow:hidden; }
+    .photo-slot::after {
+      content:"PHOTO"; position:absolute; inset:0; display:block;
+      padding-top:50%; text-align:center; font-family:"Hanken Grotesk",sans-serif;
+      font-size:.65rem; letter-spacing:.25em; color:#A89E90; line-height:1;
+    }
+  </style>
+</head>
+
+<body class="font-sans antialiased">
+
+  <!-- NAV -->
+  <header class="sticky top-0 z-50 bg-cream/95 backdrop-blur border-b border-charcoal/10">
+    <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="index.html" class="group flex flex-col leading-none">
+        <span class="text-[9px] font-sans font-bold tracking-[0.25em] text-charcoal/50 uppercase">★ NYC ★</span>
+        <span class="font-serif text-lg text-charcoal group-hover:text-red transition-colors">Salsa Dance</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-8">
+        <a href="index.html"   class="text-sm font-medium text-charcoal hover:text-red transition-colors tracking-wide">Home</a>
+        <a href="classes.html" class="text-sm font-semibold text-red tracking-wide">Classes</a>
+        <a href="about.html"   class="text-sm font-medium text-charcoal hover:text-red transition-colors tracking-wide">About</a>
+        <a href="https://foractive.app.link/pro/nycsalsadance" target="_blank" rel="noopener"
+           class="text-sm font-semibold bg-red text-cream px-5 py-2.5 rounded-full hover:bg-charcoal transition-colors">Book Now →</a>
+      </nav>
+      <button id="nav-toggle" class="md:hidden p-1 text-charcoal">
+        <svg id="icon-open"  width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        <svg id="icon-close" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" class="hidden"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+    <div id="mobile-nav" class="hidden md:hidden bg-cream border-t border-charcoal/10 px-6 py-5 flex flex-col gap-5">
+      <a href="index.html"   class="text-sm font-medium text-charcoal">Home</a>
+      <a href="classes.html" class="text-sm font-semibold text-red">Classes</a>
+      <a href="about.html"   class="text-sm font-medium text-charcoal">About</a>
+      <a href="https://foractive.app.link/pro/nycsalsadance" target="_blank" rel="noopener"
+         class="text-sm font-semibold bg-red text-cream px-5 py-3 rounded-full text-center">Book Now →</a>
+    </div>
+  </header>
+
+
+  <!-- PAGE HEADER -->
+  <section class="bg-charcoal text-cream py-24 px-6">
+    <div class="max-w-7xl mx-auto">
+      <p class="text-[10px] font-bold tracking-[0.25em] uppercase text-cream/40 mb-5">NYC Salsa Dance</p>
+      <h1 class="font-serif text-cream leading-[0.88]" style="font-size: clamp(3.5rem, 9vw, 7rem);">
+        Classes &amp;<br/>Pricing.
+      </h1>
+    </div>
+  </section>
+
+
+  <!-- WEEKLY SCHEDULE -->
+  <section class="bg-cream py-16 px-6">
+    <div class="max-w-7xl mx-auto">
+      <p class="text-[10px] font-bold tracking-[0.25em] uppercase text-charcoal/40 mb-8">Weekly Schedule</p>
+
+      <div class="divide-y divide-charcoal/10 border-t border-b border-charcoal/10 mb-8">
+        <div class="py-5 grid grid-cols-[5rem_1fr_auto] md:grid-cols-[8rem_1fr_auto] items-center gap-4">
+          <span class="text-[10px] font-bold tracking-widest uppercase text-charcoal/40">Tuesday</span>
+          <div><span class="font-semibold text-charcoal">Beginners</span><span class="text-charcoal/50 text-sm ml-2">Footwork + Partnerwork</span></div>
+          <span class="text-sm font-bold text-charcoal whitespace-nowrap">7–9 PM</span>
+        </div>
+        <div class="py-5 grid grid-cols-[5rem_1fr_auto] md:grid-cols-[8rem_1fr_auto] items-center gap-4">
+          <span class="text-[10px] font-bold tracking-widest uppercase text-charcoal/40">Thursday</span>
+          <div><span class="font-semibold text-charcoal">Beginners</span><span class="text-charcoal/50 text-sm ml-2">Footwork + Partnerwork</span></div>
+          <span class="text-sm font-bold text-charcoal whitespace-nowrap">7–9 PM</span>
+        </div>
+        <div class="py-5 grid grid-cols-[5rem_1fr_auto] md:grid-cols-[8rem_1fr_auto] items-center gap-4">
+          <span class="text-[10px] font-bold tracking-widest uppercase text-charcoal/40">Saturday</span>
+          <div class="flex flex-wrap items-center gap-2">
+            <span class="font-semibold text-charcoal">Ladies Styling</span>
+            <span class="text-[10px] font-bold tracking-widest uppercase bg-orange/15 text-orange px-2 py-0.5 rounded-full">Starting May</span>
+          </div>
+          <span class="text-sm font-bold text-charcoal whitespace-nowrap">12–1 PM</span>
+        </div>
+        <div class="py-5 grid grid-cols-[5rem_1fr_auto] md:grid-cols-[8rem_1fr_auto] items-center gap-4">
+          <span class="text-[10px] font-bold tracking-widest uppercase text-charcoal/40">Saturday</span>
+          <div><span class="font-semibold text-charcoal">Intermediate</span><span class="text-charcoal/50 text-sm ml-2">Footwork + Partnerwork</span></div>
+          <span class="text-sm font-bold text-charcoal whitespace-nowrap">1–3 PM</span>
+        </div>
+      </div>
+
+      <a href="https://foractive.app.link/pro/nycsalsadance" target="_blank" rel="noopener"
+         class="inline-block bg-red text-cream font-semibold px-8 py-3 rounded-full hover:bg-charcoal transition-colors text-sm">
+        Book Your Spot →
+      </a>
+    </div>
+  </section>
+
+
+  <!-- CLASS LEVELS — prices removed; shown in pricing section below -->
+  <section class="bg-offwhite py-20 px-6">
+    <div class="max-w-7xl mx-auto">
+      <p class="text-[10px] font-bold tracking-[0.25em] uppercase text-charcoal/40 mb-3">Levels</p>
+      <h2 class="font-serif text-3xl text-charcoal mb-10">What We Teach</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+
+        <!-- Beginner -->
+        <div class="rounded-2xl overflow-hidden border border-charcoal/10 bg-cream flex flex-col">
+          <div class="px-8 pt-7 pb-5">
+            <span class="text-xs font-bold tracking-widest uppercase text-orange">Beginner</span>
+            <h3 class="font-serif text-2xl text-charcoal mt-2 mb-4">Start Here</h3>
+            <div class="border-t border-charcoal/8 pt-4">
+              <p class="text-sm font-bold text-charcoal">Tue &amp; Thu</p>
+              <p class="text-xs text-charcoal/55 mt-0.5">7–9 PM · 2 hrs</p>
+            </div>
+          </div>
+          <div class="px-8 py-6 border-t border-charcoal/8 flex-1">
+            <ul class="space-y-3 text-charcoal/65 text-sm">
+              <li class="flex gap-3"><span class="text-orange font-bold mt-0.5">→</span>Zero experience required</li>
+              <li class="flex gap-3"><span class="text-orange font-bold mt-0.5">→</span>Footwork and on-2 timing</li>
+              <li class="flex gap-3"><span class="text-orange font-bold mt-0.5">→</span>Partner work included</li>
+              <li class="flex gap-3"><span class="text-orange font-bold mt-0.5">→</span>Rotating partners — come solo</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Intermediate -->
+        <div class="rounded-2xl overflow-hidden bg-charcoal flex flex-col">
+          <div class="px-8 pt-7 pb-5">
+            <span class="text-xs font-bold tracking-widest uppercase text-red">Intermediate</span>
+            <h3 class="font-serif text-2xl text-cream mt-2 mb-4">Level Up</h3>
+            <div class="border-t border-cream/10 pt-4">
+              <p class="text-sm font-bold text-cream">Saturdays</p>
+              <p class="text-xs text-cream/50 mt-0.5">1–3 PM · 2 hrs</p>
+            </div>
+          </div>
+          <div class="px-8 py-6 border-t border-cream/10 flex-1">
+            <ul class="space-y-3 text-cream/60 text-sm">
+              <li class="flex gap-3"><span class="text-red font-bold mt-0.5">→</span>Builds on fundamentals</li>
+              <li class="flex gap-3"><span class="text-red font-bold mt-0.5">→</span>Turns, spins, and styling</li>
+              <li class="flex gap-3"><span class="text-red font-bold mt-0.5">→</span>Musicality and rhythm</li>
+              <li class="flex gap-3"><span class="text-red font-bold mt-0.5">→</span>Complex partner sequences</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Ladies Styling -->
+        <div class="relative rounded-2xl overflow-hidden bg-red flex flex-col">
+          <div class="absolute top-5 right-5 w-13 h-13 w-12 h-12 bg-cream rounded-full flex flex-col items-center justify-center text-red text-center rotate-12 shadow-md pointer-events-none z-10">
+            <span class="text-[6px] font-bold leading-none">★</span>
+            <span class="text-[8px] font-bold leading-none mt-0.5">New</span>
+            <span class="text-[6px] font-bold leading-none mt-0.5">★</span>
+          </div>
+          <div class="px-8 pt-7 pb-5">
+            <span class="text-xs font-bold tracking-widest uppercase text-cream/70">Ladies Styling</span>
+            <h3 class="font-serif text-2xl text-cream mt-2 mb-4">Express Yourself</h3>
+            <div class="border-t border-cream/20 pt-4">
+              <p class="text-sm font-bold text-cream">Saturdays</p>
+              <p class="text-xs text-cream/60 mt-0.5">12–1 PM · 1 hr</p>
+            </div>
+          </div>
+          <div class="px-8 py-6 border-t border-cream/20 flex-1">
+            <ul class="space-y-3 text-cream/75 text-sm">
+              <li class="flex gap-3"><span class="text-cream font-bold mt-0.5">→</span>Feminine movement and expression</li>
+              <li class="flex gap-3"><span class="text-cream font-bold mt-0.5">→</span>Body isolations and flow</li>
+              <li class="flex gap-3"><span class="text-cream font-bold mt-0.5">→</span>Confidence on the dance floor</li>
+              <li class="flex gap-3"><span class="text-cream font-bold mt-0.5">→</span>No partner needed</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- PRICING -->
+  <section id="pricing" class="bg-cream py-20 px-6">
+    <div class="max-w-7xl mx-auto">
+      <p class="text-[10px] font-bold tracking-[0.25em] uppercase text-charcoal/40 mb-3">Options</p>
+      <h2 class="font-serif text-3xl text-charcoal mb-2">Pricing</h2>
+      <p class="text-charcoal/50 text-sm mb-10">
+        All bookings through ForActive.&nbsp;
+        <a href="https://foractive.app.link/pro/nycsalsadance" target="_blank" rel="noopener"
+           class="underline hover:text-red transition-colors">Book here →</a>
+      </p>
+
+      <p class="text-[10px] font-bold tracking-[0.2em] uppercase text-charcoal/35 mb-4">Drop-in</p>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
+        <div class="bg-offwhite rounded-2xl p-6 border border-charcoal/10">
+          <p class="font-serif text-5xl text-charcoal mb-2">$20</p>
+          <p class="text-sm font-semibold text-charcoal mb-1">Single Class · 1 Hour</p>
+          <p class="text-xs text-charcoal/50 leading-relaxed">One 1-hour session.</p>
+        </div>
+        <div class="bg-offwhite rounded-2xl p-6 border border-charcoal/10">
+          <p class="font-serif text-5xl text-charcoal mb-2">$30</p>
+          <p class="text-sm font-semibold text-charcoal mb-1">Double Class · 2 Hours</p>
+          <p class="text-xs text-charcoal/50 leading-relaxed">Full 2-hour session. Beginner or Intermediate.</p>
+        </div>
+        <div class="bg-red rounded-2xl p-6">
+          <p class="font-serif text-5xl text-cream mb-2">$25</p>
+          <p class="text-sm font-semibold text-cream mb-1">Ladies Styling Drop-in</p>
+          <p class="text-xs text-cream/65 leading-relaxed">Single 1-hour Ladies Styling class.</p>
+        </div>
+      </div>
+
+      <p class="text-[10px] font-bold tracking-[0.2em] uppercase text-charcoal/35 mb-4">Packages</p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+        <div class="bg-charcoal rounded-2xl p-6">
+          <p class="text-[10px] font-bold tracking-widest uppercase text-cream/40 mb-4">Package</p>
+          <p class="font-serif text-5xl text-cream mb-2">$110</p>
+          <p class="text-sm font-semibold text-cream mb-1">4 Class Package</p>
+          <p class="text-xs text-cream/55 leading-relaxed">2-hour classes.</p>
+        </div>
+        <div class="bg-charcoal rounded-2xl p-6">
+          <p class="text-[10px] font-bold tracking-widest uppercase text-cream/40 mb-4">Best Value</p>
+          <p class="font-serif text-5xl text-cream mb-2">$200</p>
+          <p class="text-sm font-semibold text-cream mb-1">8 Class Package</p>
+          <p class="text-xs text-cream/55 leading-relaxed">2-hour classes. Best rate per session.</p>
+        </div>
+        <div class="bg-red rounded-2xl p-6">
+          <p class="text-[10px] font-bold tracking-widest uppercase text-cream/60 mb-4">Ladies Styling</p>
+          <p class="font-serif text-5xl text-cream mb-2">$85</p>
+          <p class="text-sm font-semibold text-cream mb-1">4 Styling Sessions</p>
+          <p class="text-xs text-cream/70 leading-relaxed">4 × Ladies Styling classes.</p>
+        </div>
+        <div class="bg-offwhite rounded-2xl p-6 border border-charcoal/10">
+          <p class="text-[10px] font-bold tracking-widest uppercase text-charcoal/35 mb-4">Private</p>
+          <p class="font-serif text-5xl text-charcoal mb-2">$900</p>
+          <p class="text-sm font-semibold text-charcoal mb-1">10 Private Lessons</p>
+          <p class="text-xs text-charcoal/50 leading-relaxed">One-on-one with Jacob.</p>
+        </div>
+      </div>
+
+      <!-- Merch — squared card with photo area -->
+      <p class="text-[10px] font-bold tracking-[0.2em] uppercase text-charcoal/35 mb-4">Merch</p>
+      <div class="flex justify-start mb-10">
+        <div class="bg-offwhite rounded-2xl overflow-hidden border border-charcoal/10 w-full max-w-xs">
+          <div class="photo-slot w-full aspect-square"></div>
+          <div class="p-6">
+            <p class="font-serif text-4xl text-charcoal mb-1">$30</p>
+            <p class="text-sm font-semibold text-charcoal mb-1">NYC Salsa Dance T-Shirt</p>
+            <p class="text-xs text-charcoal/45 mt-1">Available via ForActive.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center">
+        <a href="https://foractive.app.link/pro/nycsalsadance" target="_blank" rel="noopener"
+           class="inline-block bg-red text-cream font-semibold px-10 py-4 rounded-full hover:bg-charcoal transition-colors text-base">
+          Purchase Via ForActive →
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- WHAT TO EXPECT -->
+  <section class="bg-offwhite py-20 px-6">
+    <div class="max-w-3xl mx-auto">
+      <p class="text-[10px] font-bold tracking-[0.25em] uppercase text-charcoal/40 mb-3">First Time?</p>
+      <h2 class="font-serif text-3xl text-charcoal mb-10">What to Expect</h2>
+      <div class="divide-y divide-charcoal/10">
+        <div class="py-7">
+          <h3 class="font-semibold text-charcoal mb-2">Do I need a partner?</h3>
+          <p class="text-charcoal/60 text-sm leading-relaxed">No. We rotate partners throughout. Come alone — you'll dance with everyone in the room.</p>
+        </div>
+        <div class="py-7">
+          <h3 class="font-semibold text-charcoal mb-2">Which class should I start with?</h3>
+          <p class="text-charcoal/60 text-sm leading-relaxed">If you've never danced salsa before, start with Beginners on Tuesday or Thursday. If you have some experience, try Intermediate on Saturday.</p>
+        </div>
+        <div class="py-7">
+          <h3 class="font-semibold text-charcoal mb-2">What should I wear?</h3>
+          <p class="text-charcoal/60 text-sm leading-relaxed">Comfortable clothes you can move in. Dance shoes help but aren't required. Bring a change of shirt.</p>
+        </div>
+        <div class="py-7">
+          <h3 class="font-semibold text-charcoal mb-2">How do I book and pay?</h3>
+          <p class="text-charcoal/60 text-sm leading-relaxed">
+            All bookings go through the ForActive app.&nbsp;
+            <a href="https://foractive.app.link/pro/nycsalsadance" target="_blank" rel="noopener"
+               class="underline hover:text-red transition-colors">Book here →</a>
+          </p>
+        </div>
+        <div class="py-7">
+          <h3 class="font-semibold text-charcoal mb-2">Is it truly beginner-friendly?</h3>
+          <p class="text-charcoal/60 text-sm leading-relaxed">Yes. The community is built around welcoming people who have never danced before. If you've wanted to start, Tuesday or Thursday is your moment.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer class="bg-charcoal border-t border-cream/10 text-cream py-10 px-6">
+    <div class="max-w-7xl mx-auto">
+      <div class="font-serif text-xl mb-3">NYC Salsa Dance</div>
+      <a href="https://maps.app.goo.gl/LQngZoF4Mh9aEFiA9" target="_blank" rel="noopener"
+         class="text-cream/35 text-sm leading-relaxed hover:text-cream/65 transition-colors">
+        232 Varet Street, 2nd Floor<br/>
+        (Inside Metamorphosis Fitness)<br/>
+        Brooklyn, NY 11206 →
+      </a>
+    </div>
+    <div class="max-w-7xl mx-auto mt-6 pt-5 border-t border-cream/10 text-cream/20 text-xs">
+      © 2025 NYC Salsa Dance · Website Design by Pavlos Kollias · Visual Direction by Elea Franco.
+    </div>
+  </footer>
+
+  <script>
+    const btn=document.getElementById("nav-toggle"),drawer=document.getElementById("mobile-nav"),io=document.getElementById("icon-open"),ic=document.getElementById("icon-close");
+    btn.addEventListener("click",()=>{const o=drawer.classList.toggle("hidden");io.classList.toggle("hidden",!o);ic.classList.toggle("hidden",o);});
+  </script>
+</body>
+</html>
