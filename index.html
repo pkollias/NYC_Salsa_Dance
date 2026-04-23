@@ -175,31 +175,38 @@
       </div>
 
       <div class="relative overflow-hidden" style="min-height: 520px;">
-        <!-- Logo watermark — behind everything, centered top -->
-        <img src="pics/logo.png" alt=""
-             class="absolute pointer-events-none select-none"
-             style="width: 70%; top: -4%; left: 50%; transform: translateX(-50%); opacity: 0.07;">
-        <img src="pics/posters/poster01.png"
+
+        <!-- Vinyl — bottom-left, deepest layer -->
+        <img src="pics/AI/vinyl.jpeg" alt=""
+             class="absolute rounded-xl shadow-xl"
+             style="width: 44%; bottom: 3%; left: 1%; transform: rotate(-7deg); opacity: 0.95;">
+
+        <!-- Poster 03 — upper-center, behind the other two posters -->
+        <img src="pics/AI/poster03.jpeg" alt=""
+             class="absolute rounded-2xl shadow-xl"
+             style="width: 48%; top: 4%; right: 30%; transform: rotate(-1.5deg); opacity: 0.85;">
+
+        <!-- Poster 02 — lower-right, clearly below poster01 -->
+        <img src="pics/AI/poster02.jpeg" alt=""
              class="absolute rounded-2xl shadow-2xl"
-             style="width: 60%; top: 0; right: 0; transform: rotate(2.5deg);" alt="">
-        <img src="pics/posters/moodboard01.png"
-             class="absolute rounded-xl shadow-xl"
-             style="width: 54%; top: 14%; right: 26%; transform: rotate(-2deg); opacity: 0.88;" alt="">
-        <img src="pics/posters/poster04.png"
-             class="absolute rounded-xl shadow-xl"
-             style="width: 50%; bottom: 3%; right: 1%; transform: rotate(1.5deg);" alt="">
-        <img src="pics/posters/moodboard02.png"
-             class="absolute rounded-lg shadow-lg"
-             style="width: 42%; bottom: 20%; right: 40%; transform: rotate(-1.5deg); opacity: 0.82;" alt="">
+             style="width: 50%; top: 38%; right: 6%; transform: rotate(-4deg); opacity: 0.95;">
+
+        <!-- Poster 01 — upper-right, smaller, tilted away -->
+        <img src="pics/AI/poster01.jpeg" alt=""
+             class="absolute rounded-2xl shadow-2xl"
+             style="width: 45%; top: -2%; right: 1%; transform: rotate(6deg);">
+
         <!-- Gradient fades images toward the text on the left -->
         <div class="absolute inset-0 pointer-events-none"
-             style="background: linear-gradient(to right, #F4EFE6 0%, rgba(244,239,230,0.8) 22%, rgba(244,239,230,0.15) 55%, transparent 80%);"></div>
+             style="background: linear-gradient(to right, #F4EFE6 0%, rgba(244,239,230,0.82) 20%, rgba(244,239,230,0.18) 52%, transparent 78%);"></div>
+
         <!-- Price badge -->
         <div class="absolute bottom-6 left-2 bg-cream rounded-xl px-5 py-4 shadow-xl border border-charcoal/10 z-10">
           <p class="text-[10px] font-bold tracking-widest uppercase text-charcoal/40 mb-1">From</p>
           <p class="font-serif text-5xl text-charcoal leading-none">$20</p>
           <p class="text-xs text-charcoal/50 mt-1">per class</p>
         </div>
+
       </div>
 
     </div>
